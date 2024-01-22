@@ -6,7 +6,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "biome lint ./src",
+    "format": "biome format ./src",
+    "check": "biome check ./src",
+    "fix": "biome check ./src --apply --log-level=info"
   },
   "dependencies": {
     "next": "14.1.0",
